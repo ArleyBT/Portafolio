@@ -254,16 +254,71 @@ body {
 }
 
 .icono1{
-    width:13px;
+    width:12px;
     margin-right: 5px;
 }
 
 .linea{
     box-sizing: border-box;
     color: #555;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
     opacity: 60%;
 } 
-   
+
+
+.container-experiancia{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    text-align: left;
+    position: relative;
+    width: 1300px;
+
+    
+}
+
+.titulo-experiancia h2{
+    color: #555;
+    font-size: 23px;
+    line-height: 20px; 
+    margin-left: 80px;
+} 
+
+.titulo-educacion h2{
+    color: #555;
+    font-size: 23px;
+    line-height: 20px; 
+    margin-left: 80px;
+    margin-right: 20px; 
+}
+
+.reumen-items{
+    margin-top: 60px;
+    margin-left: -140px;    
+}
+
+.calendario{
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+
+.cargo{ 
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descricion{
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+}
+
