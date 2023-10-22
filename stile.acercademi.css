@@ -15,6 +15,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header{
@@ -50,15 +51,15 @@ body {
 }
   
 .menu .navbar ul li a{
-   font-size: 15px;
-   padding: 20px;
-   color: #555;
-   display: block;
-}
-
+    font-size: 15px;
+    padding: 20px;
+    color: #555;
+    display: block;
+    text-decoration: none;
+    
+ }
 .menu .navbar ul li a:hover {
     color:#3C8ECA;
-
 }
 
 #menu{
@@ -273,11 +274,8 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: left; 
-    text-align: left;
     position: relative;
-    width: 1300px;
-
-    
+    width: 1300px;    
 }
 
 .titulo-experiancia h2{
@@ -320,5 +318,123 @@ body {
 .descricion{
     color: rgb(92, 92, 92);
     font-size: 15px;
+    width: 600px;
 }
+
+
+.container-habilidades{
+    padding-top: 40px;  
+}
+
+.titulo-habilidades h2{
+    text-align: left;
+    color: #555;
+    font-size: 23px;
+    align-items: left;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+.tabla{
+    width: 1300px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+
+.linea-gris{
+    border-radius: 2px;
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    background: #ddd;
+    margin-bottom: 40px;
+}
+
+.container-habilidades{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    position: relative;
+    width: 1300px;    
+}
+
+
+.habilidad{ 
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-right: 460px;
+  
+}
+
+.reumen-habilidad{
+    margin-top: 60px;
+    margin-left: -140px;  
+    
+}
+
+.progress {
+    height: 15px;
+    width: 65%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+    font-size: 13px;
+}
+
+.footer{
+    background-color: #e9e9e9;
+    padding-top: 40px; 
+    padding-bottom: 10px;
+    left:0;
+    width:100%;
+    position: relative;
+    align-items: center;
+
+   
+}
+
+.footer-cont{
+    align-items: center;
+    text-align: center;
+    position: relative;  
+}
+
+
+.footer-cont ul li{
+    display:inline-block;
+    text-align: center;
+    margin-right: 10px;
+
+}
+
+
+.calendario-02{
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
 
