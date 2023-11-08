@@ -77,21 +77,21 @@
                     Si tienes alguna sugerencia, proyecto o incluso quieres decir hola...Por favor completa el siguiente 
                     formulario y te respondere en breve 
                 </p>
-                <form class="row g-3" >
+                <form class="row g-3" id="form-contacto">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="username">
+                        <span id="usernameError" class="error"></span>
                       </div>
 
                     <div class="col-6">
-                        <input type="email" class="form-control" id="emailImput" placeholder="Escribe tu email">                                                     
+                        <input type="email" class="form-control" id="emailImput" placeholder="Escribe tu email" >
+                        <span id="emailImputError" class="error"></span>                                                
                     </div>
 
                     <div class="col-12">
-                        <textarea class="form-control" placeholder="Deja tu mensaje" id="floatingTextarea"></textarea>
-                       
+                        <textarea class="form-control" placeholder="Deja tu mensaje" id="floatingTextarea" ></textarea>
+                       <span id="floatingTextareaError" class="error"></span>
                     </div>
-
-
 
                     <button type="submit" class="btn btn-primary btn-sm">Enviar mesaje</button>
                 </form>
@@ -151,6 +151,13 @@
     
 
     
+
+
+    <script src="script.js"></script>
+    <script>
+        const formulario = new ValidadorFormulario('form-contacto');
+    </script>
+
     
 </body>
 </html>

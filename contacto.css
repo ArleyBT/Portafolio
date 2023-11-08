@@ -242,5 +242,7 @@ body {
     margin-bottom: 1px;
 }
 
-
+.error-input{
+    border: 3px solid red;
+}
 
