@@ -82,19 +82,27 @@
                         <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="username">
                         <span id="usernameError" class="error"></span>
                       </div>
-
+ 
                     <div class="col-6">
-                        <input type="email" class="form-control" id="emailImput" placeholder="Escribe tu email" >
-                        <span id="emailImputError" class="error"></span>                                                
+                        <input type="email" class="form-control" id="email" placeholder="Escribe tu email" >
+                        <span id="emailError" class="error"></span>                                                
                     </div>
 
                     <div class="col-12">
-                        <textarea class="form-control" placeholder="Deja tu mensaje" id="floatingTextarea" ></textarea>
-                       <span id="floatingTextareaError" class="error"></span>
+                        <textarea class="form-control" placeholder="Deja tu mensaje" id="mensaje" ></textarea>
+                       <span id="mensajeError" class="error"></span>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-sm">Enviar mesaje</button>
                 </form>
+
+                <script src="script.js"></script>
+                <script>
+                    const formulario = new ValidadorFormulario('for-contacto')
+                </script>
+
+               
+
             </div>
 
 
@@ -111,7 +119,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.117706816916!2d-74.16793500000001!3d4.5728683000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f0bb4ce3c83%3A0xabb7df4705fd3e1d!2sTRES%20ESQUINAS%20DE%20CIUDAD%20BOLIVAR!5e0!3m2!1ses!2sco!4v1697785368792!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
 
-
+    
     </section>
 
     <footer class="footer">
@@ -153,10 +161,7 @@
     
 
 
-    <script src="script.js"></script>
-    <script>
-        const formulario = new ValidadorFormulario('form-contacto');
-    </script>
+    
 
     
 </body>
