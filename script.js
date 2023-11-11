@@ -9,10 +9,10 @@ class ValidadorFormulario {
         //Seleccionar span de error
         this.usernameError = document.getElementById('usernameError');
         this.emailError = document.getElementById('emailError');
-        this.mensajeError = document.getElementById('Deja tu mensajeError');
+        this.mensajeError = document.getElementById('Deja tu mensaje Error');
     
         //Escuchar eventos del usuario
-        this.form.addEventListener('submit', (event) =>{
+        this.form.addEventListener('submit', (event) => {
             event.preventDefault(); //Evitar el envio de formulario 
 
             if(this.ValidarFormulario()) {
@@ -32,6 +32,19 @@ class ValidadorFormulario {
         } else {
             this.usernameError.textContent = '';
             this.username.classList.remove('error-input');
+        } 
+    }
+
+    ValidarFormulario(){
+        let valid = true;
+    
+        if (this.email.value === '') {
+            this.emailError.textContent = 'EL email es obligatorio'
+            this.email.classList.add('error-imput')
+            valid = false;
+        } else {
+            this.emailError.textContent = '';
+            this.email.classList.remove('error-input');
         } 
     }
 
